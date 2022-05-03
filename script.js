@@ -26,9 +26,14 @@ function incrementClick() {
 	updateDisplay(++clicks);
 }
 
-function resetCounter() {
+function reset() {
 	clicks = 0;
 	updateDisplay(clicks);
+	btnStart.style.display = "block";
+	playBox.style.display = "none";
+	h1Title.innerText = 'Загадай любое число от 1 до 100';
+	a = 0;
+	b =1000;
 }
 
 function updateDisplay(val) {
